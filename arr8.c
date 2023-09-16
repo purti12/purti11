@@ -25,18 +25,18 @@ int main()
              { 
                for(j=0;j<3;j++)
                {
-                if(i+j==1)
+                if(i+j==2)
                {
                 sum=sum+a[i][j];
                }
                     printf("\t%d",sum);
              }
              }
-             for(i=0;i<3;i++)
+             for(i=2;i<3;i++)
              {
                for(j=0;j<3;j++)
                {
-                if(i+j==0 || i+j==2|| i+j==4)
+                if(i+j==2|| i+j==4)
                 {
                     sum=sum+a[i][j];
                 }

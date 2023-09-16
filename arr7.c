@@ -41,6 +41,6 @@ int main()
                     sum=sum+a[i][j];
                 }
                }
-                printf("%dL shape add is",sum);
+                printf("\n%dL shape add is",sum);
              }
 }
