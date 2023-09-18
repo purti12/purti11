@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+int c1=0,s1=0,rev=0,temp=0;
 int main()
 {
     int n;
@@ -21,37 +22,37 @@ int main()
     }
     break;
     case 2:
-    int num2,i,c;
+    int num2,i;
     cout<<"\nenter the number";
     cin>>num2;
     for(i=2;i<=num2;i++)
     {
     if(num2%i==0)
     {
-        c++;
+        c1++;
     }
     }
-    if(c==1)
+    if(c1==1)
     {
-        cin>>"prime number";
+        cout<<"prime number";
     }
     else
     {
-      cin>>"not prime number";
+      cout<<"not prime number"<<endl;
     }
     break;
     case 3:
-      int num3,r,temp,sum=0;
+      int num3,r,temp;
       cout<<"enter the number";
       cin>>num3;
       temp=num3;
       while(num3>0)
       {
         r=num3%10;
-        sum=sum+(r*r*r);
+        s1=s1+(r*r*r);
         num3=num3/10;
       }
-      if(temp==sum)
+      if(temp==s1)
       {
         cout<<"\n armstrong number";
       }
@@ -60,6 +61,27 @@ int main()
         cout<<"\n not armstrong number";
       }
       break;
+      {
+        int num4,r2;
+        cout<<"\nenter any number";
+        cin>>num4;
+        temp=num4;
+        while(num2!=0)
+        {
+          r2=num4%10;
+          rev=(rev*10)+r2;
+          num4=num4/10;
+        }
+        if (temp==rev)
+        {
+          cout<<"\n palindrom";
+        }
+        else
+        {
+          cout<<"\nnot palindrom";
+        }
+        break;
+      }
 
 
     }
